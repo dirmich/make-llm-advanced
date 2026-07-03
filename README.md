@@ -6,7 +6,7 @@
 
 ## 소개
 
-이 패키지는 **Make LLM-advanced** 책의 전체 소스 코드와 LaTeX 원고를 포함합니다. 분산 학습, 최신 아키텍처, 양자화, 정렬, 추론 최적화 등 대규모 LLM을 실제로 운영하기 위한 고급 기법을 다룹니다.
+이 패키지는 **Make LLM-advanced** 책의 전체 실습용 소스 코드를 포함합니다. 분산 학습, 최신 아키텍처, 양자화, 정렬, 추론 최적화 등 대규모 LLM을 실제로 운영하기 위한 고급 기법을 다룹니다.
 
 **선수 조건**: 1권 Make LLM-basic을 먼저 읽었거나 동등한 지식이 필요합니다.
 
@@ -23,11 +23,6 @@ make-llm-advanced/
 │   ├── data/                 # 필터, MinHash, 합성 데이터
 │   └── utils/
 ├── tests/                    # pytest 단위 테스트 (71개)
-├── book/                     # LaTeX 원고
-│   ├── main.tex
-│   ├── shared/preamble.tex
-│   ├── chapters/             # 10개 장 + 2개 부록
-│   └── make_llm_advanced.pdf
 ├── pyproject.toml
 ├── requirements.txt
 └── README.md (이 파일)
@@ -88,19 +83,10 @@ out = attn(x, use_cache=True)
 # 이후 스텝: 이전 K, V는 캐시에서 재사용
 ```
 
-## 책 PDF 빌드
-
-```bash
-cd book
-tectonic -o . --outname make_llm_advanced main.tex
-```
-
 ## 라이선스
 
 - 코드: MIT
-- 책 본문: CC BY-NC-SA 4.0
 
 ## 관련 자료
 
 - 1권: Make LLM-basic (토크나이저, 트랜스포머 기초)
-- PRD/Plan/Task 문서: 별도 PDF
