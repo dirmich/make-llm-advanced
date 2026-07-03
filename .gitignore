@@ -9,14 +9,12 @@ __pycache__/
 .vscode/
 
 # 임시 문서 및 자동 생성 데이터
-docs/*
+docs/
 .agents/
 .omx/
-!docs/publishing_guide.md
 
 # 빌드 및 컴파일 유틸리티 스크립트 격리 폴더
-tools/*
-!tools/publish_book.py
+tools/
 
 # 책 원고 및 출판 파일 차단 (보안)
 book/
